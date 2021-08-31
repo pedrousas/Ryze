@@ -1,0 +1,27 @@
+.ryze img {
+    position: absolute;
+    width: 300px;
+}
+
+.ryze img:nth-child(2) {
+    z-index: 9999;
+    animation: glow 2s infinite;
+}
+
+
+@keyframes glow {
+    0% {
+        -webkit-filter: drop-shadow(0 0 1px rgb(70, 0, 199));
+        filter: drop-shadow(0 0 0 rgb(32, 3, 196));
+    }
+
+    50% {
+        -webkit-filter: drop-shadow(0 0 100px rgb(70, 0, 199));
+        filter: drop-shadow(0 0 10px rgba(38, 0, 255, 0.844));
+    }
+
+    100% {
+        -webkit-filter: drop-shadow(0 0 1px rgb(70, 0, 199));
+        filter: drop-shadow(0 0 1px rgb(32, 3, 196));
+    }
+}
